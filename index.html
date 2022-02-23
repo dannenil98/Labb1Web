@@ -10,11 +10,10 @@
 <body>
     
     <ul>
-        <li><a href="Kundvagn.html">Kundvagn</a></li>
         <li><a href="Courses.html">Kurser</a></li>
         <li><a href="index.html">Startsida</a></li>
-        
     </ul>
+    
     <h1 id="Logga">Westcoast Education</h1>
     <h1>Westcoast Education</h1>    
     <h3>Ditt utbildningsföretag</h3>
@@ -29,7 +28,141 @@
         Vi kommer även att tillhandahålla on-demand kurser,
          där du som elev kan köpa färdiginspelade kurser till ett billigt pris.
     </p1>
-<img src="C:\Users\dante\labb1 bild 1.jpg" style="float: right; margin-top: 20px;" />
-<img src="C:\Users\dante\labb1 bild 2.jpg" style="margin-top: 20px;"/>
+<img id="pic1" class="responsive" src="C:\Users\dante\labb1 bild 1.jpg"/>
+<img id="pic2" class="responsive" src="C:\Users\dante\labb1 bild 2.jpg"/>
+<table id="Kurslista">
+    <tr>
+        <th>Kursnummer</th>
+        <th>Kurstitel</th>
+        <th>Kursbeskrivning</th>
+        <th>Kurslängd</th>
+    </tr>
+    <tr>
+        <td>5555</td>
+        <td>Cloud</td>
+        <td>Programmering i molntjänster</td>
+        <td>2 år</td>
+    </tr>
+    <tr>
+        <td>5556</td>
+        <td>AI</td>
+        <td>Lär dig allt om artificiell intelligens</td>
+        <td>2 år</td>
+    </tr>
+    <tr>
+        <td>5557</td>
+        <td>.NET</td>
+        <td>Backend programmering</td>
+        <td>2 år</td>
+    </tr>
+    <tr>
+        <td>5558</td>
+        <td>Programmering i python</td>
+        <td>Programmering i python helt enkelt</td>
+        <td>2 år</td>
+    </tr>
+    <tr>
+        <td>5559</td>
+        <td>Excel grund</td>
+        <td>Lär dig grunderna i Excel</td>
+        <td>2 år</td>
+    </tr>
+    <tr>
+        <td>5560</td>
+        <td>Officepaket</td>
+        <td>Lär dig grunderna i Word,Excel och Powerpoint</td>
+        <td>2 år</td>
+    </tr>
+    <tr>
+        <td>5561</td>
+        <td>Adobe</td>
+        <td>Lär dig bildbehanling i Photoshop, hur du skapar layouts med mera</td>
+        <td>2 år</td>
+    </tr>
+</table>
+<button id="Btn2" class="Btn2">Lägg till kurs</button>
+<button style="left: 11%;" class="Btn2" onclick="myFunction()">Ta bort</button>
+    <div id="Modal2" class="modal2">
+        <div class="modal-content2">
+            <span><label>Kursnummer</label></span>
+            <span><input id="cellEtt" type="text"  required=""
+                    placeholder="Kursnummer"></span><br>
+            <span><label>Kurstitel</label></span>
+            <span><input id="cellTvå" type="text"  required=""
+                    placeholder="Kurstitel"></span><br>
+            <span><label>Kursbeskrivning</label></span>
+            <span><input id="cellTre" type="text"  required=""
+                    placeholder="KursBeskrivning"></span><br>
+            <span><label>Kurslängd</label></span>
+            <span><input id="cellFyra" type="text" required=""
+                    placeholder="Kurslängd"></span><br>
+            <span class="close2">&times;</span>
+            <button id="Btn2" onClick="Läggtillrad()" >Lägg till </button>
+        </div>
+    </div>
+    <script >
+        function Läggtillrad(){
+            var tabell = document.getElementById("Kurslista");
+            var rad = tabell.insertRow(1);
+            var cell1 = row.insertCell(0);
+            var cell2 = row.insertCell(1);
+            var cell3 = row.insertCell(2);
+            var cell4 = row.insertCell(3);
+            cell1.innerHTML = document.getElementById("cellEtt").value;
+            cell2.innerHTML = document.getElementById("cellTvå").value;
+            cell3.innerHTML = document.getElementById("cellTre").value;
+            cell4.innerHTML = document.getElementById("cellFyra").value;
+        }
+       
+        
+    
+        var modal = document.getElementById("Modal2");
+
+        var btn = document.getElementById("Btn2");
+
+        var span = document.getElementsByClassName("close2")[0];
+
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <script>
+        function myFunction() {
+            document.getElementById("Kurslista").deleteRow(1);
+        }
+    </script>
+    
+    
+    <script>
+        var modal = document.getElementById("Modal2");
+
+        var btn = document.getElementById("Btn2");
+
+        var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>

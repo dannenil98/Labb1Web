@@ -5,36 +5,100 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" />
+    <script src="script.js"></script>
     <title>Courses</title>
 </head>
 <body>
     <ul>
         <h1 id="Logga">Westcoast Education</h1>
-        <li><a href="Kundvagn.html">Kundvagn</a></li>
         <li><a href="Courses.html">Kurser</a></li>
         <li><a href="index.html">Startsida</a></li>
-        
-        
     </ul>
-    <form>
-    <img src="C:\Users\dante\kurserbild.jpg" width="1247" height="auto">
+    <img src="C:\Users\dante\kurserbild.jpg" class="responsive">
     <h1 id="Header">Aktuella Kurser</h1>
-    <h2 style="margin-top: 3em; margin-left: 0em;">Lägg till kurser:</h2>
-    <input type="checkbox" id="kurs1">
-    <label for="kurs1"> Cloud</label><br>
-    <input type="checkbox" id="kurs2">
-    <label for="kurs2"> A1 </label><br>
-    <input type="checkbox" id="kurs3">
-    <label for="kurs3"> .NET</label><br>
-    <input type="checkbox" id="kurs3">
-    <label for="kurs3"> Programmering i python</label><br>
-    <input type="checkbox" id="kurs4">
-    <label for="kurs3"> Excel grund</label><br>
-    <input type="checkbox" id="kurs5">
-    <label for="kurs3"> Officepaket</label><br>
-    <input type="checkbox" id="kurs6">
-    <label for="kurs3"> Adobe</label><br>
-    <input type="submit" value="Lägg till i kundvagn">
+    <h2 id="Kundvagn">Kundvagn:</h2>
+    <button id="Btn">Köp</button>
+    <div id="Modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p4 id="Modaltext">Köpet är bekräftat</p4>
+        </div>
+    </div>
+    <script>
+    var modal = document.getElementById("Modal");
+    
+    var btn = document.getElementById("Btn");
+    
+    var span = document.getElementsByClassName("close")[0];
+    
+    btn.onclick = function() {
+    modal.style.display = "block";
+    }
+    
+    span.onclick = function() {
+    modal.style.display = "none";
+    }
+    
+    window.onclick = function(event) {
+    if (event.target == modal) {
+    modal.style.display = "none";
+    }
+    }
+</script>
+
+<script>
+    var modal = document.getElementById("Modal2");
+
+    var btn = document.getElementById("Btn");
+
+    var span = document.getElementsByClassName("close")[0];
+
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
+
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+    
+    <form>
+    <h2>Lägg till kurser:</h2>
+
+    <input type="checkbox" id="kurs1" onclick="
+    checkMe()"><p3 id="text1" style="display: none;">Cloud</p3>
+    <label for="kurs1" value="Cloud">Cloud</label><br>
+
+    <input type="checkbox" id="kurs2" onclick="
+    checkMe()"><p3 id="text2" style="display: none;">AI</p3>
+    <label for="kurs2" value="AI"> AI </label><br>
+
+    <input type="checkbox" id="kurs3" onclick="
+    checkMe()"><p3 id="text3" style="display: none;">.NET</p3>
+    <label for="kurs3" value=".NET" >.NET</label><br>
+
+    <input type="checkbox" id="kurs4"onclick="
+    checkMe()"><p3 id="text4" style="display: none;">Programmering i python</p3>
+    <label for="kurs4" value="Programmering i python"> Programmering i python</label><br>
+    
+    <input type="checkbox" id="kurs5"onclick="
+    checkMe()"><p3 id="text5" style="display: none;">Excel grund</p3>
+    <label for="kurs5" value="Excel grund"> Excel grund</label><br>
+
+    <input type="checkbox" id="kurs6"onclick="
+    checkMe()"><p3 id="text6" style="display: none;">Officepaket</p3>
+    <label for="kurs6" value="Officepaket"> Officepaket</label><br>
+
+    <input type="checkbox" id="kurs7"onclick="
+    checkMe()"><p3 id="text7" style="display: none;">Adobe</p3>
+    <label for="kurs7"value="Adobe"> Adobe</label><br>
     </form>
     
 </body>
