@@ -15,96 +15,79 @@
         <li><a href="index.html">Startsida</a></li>
         <h1 id="Logga">Westcoast Education</h1>
     </ul>
-    <img src="https://tse2.mm.bing.net/th?id=OIP.UZIXFsxalGRKZOklI9cthwHaDt&pid=Api&P=0&w=338&h=169" class="responsive">
     <h1 id="Header">Aktuella Kurser</h1>
-    <h2 id="Kundvagn">Kundvagn:</h2>
+    <img id="pic3" src="https://tse2.mm.bing.net/th?id=OIP.UZIXFsxalGRKZOklI9cthwHaDt&pid=Api&P=0&w=338&h=169" class="responsive">
         <form>
             <h2>Lägg till kurser:</h2>
         
             <input type="checkbox" id="kurs1" onclick="
             checkMe()">
-            <p3 id="text1" style="display: none;">Cloud</p3>
             <label for="kurs1" value="Cloud">Cloud</label><br>
         
             <input type="checkbox" id="kurs2" onclick="
             checkMe()">
-            <p3 id="text2" style="display: none;">AI</p3>
             <label for="kurs2" value="AI"> AI </label><br>
         
             <input type="checkbox" id="kurs3" onclick="
             checkMe()">
-            <p3 id="text3" style="display: none;">.NET</p3>
             <label for="kurs3" value=".NET">.NET</label><br>
         
             <input type="checkbox" id="kurs4" onclick="
             checkMe()">
-            <p3 id="text4" style="display: none;">Programmering i python</p3>
             <label for="kurs4" value="Programmering i python"> Programmering i python</label><br>
         
             <input type="checkbox" id="kurs5" onclick="
             checkMe()">
-            <p3 id="text5" style="display: none;">Excel grund</p3>
             <label for="kurs5" value="Excel grund"> Excel grund</label><br>
         
             <input type="checkbox" id="kurs6" onclick="
             checkMe()">
-            <p3 id="text6" style="display: none;">Officepaket</p3>
+            
             <label for="kurs6" value="Officepaket"> Officepaket</label><br>
         
             <input type="checkbox" id="kurs7" onclick="
             checkMe()">
-            <p3 id="text7" style="display: none;">Adobe</p3>
             <label for="kurs7" value="Adobe"> Adobe</label><br>
         </form>
-    <button id="Btn">Köp</button>
+        <h2 id="Kundvagn">Kundvagn:</h2>
+        <p3 id="text1" style="display: none;">Cloud</p3><br>
+        <p3 id="text2" style="display: none;">AI</p3><br>
+        <p3 id="text3" style="display: none;">.NET</p3><br>
+        <p3 id="text4" style="display: none;">Programmering i python</p3><br>
+        <p3 id="text5" style="display: none;">Excel grund</p3><br>
+        <p3 id="text6" style="display: none;">Officepaket</p3><br>
+        <p3 id="text7" style="display: none;">Adobe</p3><br>
+    <button id="Btn" onclick=document.getElementById(Modaltext)>Köp</button>
     <div id="Modal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
             <p4 id="Modaltext">Köpet är bekräftat</p4>
         </div>
     </div>
+    
+    
+       
     <script>
+    {
     var modal = document.getElementById("Modal");
-    
     var btn = document.getElementById("Btn");
-    
     var span = document.getElementsByClassName("close")[0];
     
-    btn.onclick = function() {
+    btn.onclick = function () {
     modal.style.display = "block";
     }
     
-    span.onclick = function() {
+    span.onclick = function () {
     modal.style.display = "none";
     }
     
-    window.onclick = function(event) {
+    window.onclick = function (event) {
     if (event.target == modal) {
     modal.style.display = "none";
     }
     }
-</script>
-
-<script>
-    var modal = document.getElementById("Modal2");
-
-    var btn = document.getElementById("Btn");
-
-    var span = document.getElementsByClassName("close")[0];
-
-    btn.onclick = function () {
-        modal.style.display = "block";
     }
-
-    span.onclick = function () {
-        modal.style.display = "none";
-    }
-
-    window.onclick = function (event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-</script>
+    </script>
+    
 </body>
 </html>

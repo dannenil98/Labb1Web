@@ -1,6 +1,7 @@
 body {
   background-color: lightgray;
   font-family: century;
+  font-size: 100%;
 }
 ul {
   font-family: Arial, Helvetica, sans-serif;
@@ -9,18 +10,15 @@ ul {
   padding: 0%;
   background-color: cadetblue;
   overflow: hidden;
-  font-size: 1.3vw;
+  font-size: 1em;
 }
 #Logga {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  left: 3%;
+  margin-left: 0.2em;
   top: 0%;
   color: beige;
-  font-size: 2vw;
-}
-
-.Headertext {
+  font-size: 1em;
 }
 
 li a {
@@ -35,27 +33,27 @@ li a {
   display: block;
   color: bisque;
   text-align: center;
-  padding: 1em 1.2em;
+  padding: 0.5em;
   text-decoration: none;
 }
 
 h1 {
   left: 37%;
-  font-size: 2.4vw;
+  font-size: 2em;
 }
 h2 {
-  padding: 8px;
+  padding: 1.8em;
 }
 h3 {
   top: 17%;
   left: 37%;
-  font-size: 1.8vw;
+  font-size: 1.5em;
   padding: 8px;
 }
 h4 {
   left: 45%;
   top: 48%;
-  font-size: 1.4vw;
+  font-size: 1.3em;
 }
 
 p {
@@ -64,134 +62,78 @@ p {
   letter-spacing: 0.1em;
   left: 45%;
   right: 2%;
-  font-size: 1.3vw;
+  font-size: 1em;
 }
 #p2 {
   font-family: "Times New Roman", Times, serif;
   letter-spacing: 0.1em;
-
   bottom: 8%;
   left: 45%;
   right: 2%;
-  font-size: 1.3vw;
+  font-size: 1em;
 }
 
 #Header {
   align-items: center;
-  font-size: 4vw;
+  font-size: 3em;
   color: cadetblue;
-  padding: 8px;
+  text-align: center;
 }
 li a:hover {
   background-color: rgb(66, 112, 114);
-}
-#pic3 {
 }
 
 #pic2 {
   float: right;
 }
+#pic3 {
+  text-align: center;
+  border-radius: 8px;
+  margin-left: 37%;
+}
 .responsive {
-  max-width: 100%;
-  height: auto;
-  margin: 1.2em;
-  font-size: 1.2vw;
+  max-width: 40%;
 }
 
 form {
-  left: 10%;
-  position: absolute;
-  font-size: 1.5vw;
+  font-size: 0.8em;
+  text-align: center;
 }
 #text1 {
-  font-family: "Times New Roman", Times, serif;
-  letter-spacing: 0.1em;
-  bottom: 8%;
-  position: absolute;
-  left: 100%;
-  right: 0%;
-  font-size: 1.3vw;
-  margin-left: 25em;
-  top: 30%;
+  margin-top: 0em;
+  text-align: center;
+  font-size: 0.8em;
 }
 #text2 {
-  font-family: "Times New Roman", Times, serif;
-  letter-spacing: 0.1em;
-  bottom: 8%;
-  position: absolute;
-  left: 100%;
-  right: 0%;
-  font-size: 1.3vw;
-  margin-left: 25em;
-  top: 30%;
-  margin-top: 1.5em;
+  text-align: center;
+  font-size: 0.8em;
 }
 #text3 {
-  font-family: "Times New Roman", Times, serif;
-  letter-spacing: 0.1em;
-  bottom: 8%;
-  position: absolute;
-  left: 100%;
-  right: 0%;
-  font-size: 1.3vw;
-  margin-left: 25em;
-  top: 30%;
-  margin-top: 3em;
+  text-align: center;
+  font-size: 0.8em;
 }
 #text4 {
-  font-family: "Times New Roman", Times, serif;
-  letter-spacing: 0.1em;
-  bottom: 8%;
-  position: absolute;
-  left: 100%;
-  right: 20%;
-  font-size: 1.3vw;
-  margin-left: 25em;
-  top: 30%;
-  margin-top: 4.5em;
-  width: 100%;
+  text-align: center;
+  font-size: 0.8em;
 }
 #text5 {
-  font-family: "Times New Roman", Times, serif;
-  letter-spacing: 0.1em;
-  bottom: 8%;
-  position: absolute;
-  left: 100%;
-  right: 0%;
-  font-size: 1.3vw;
-  margin-left: 25em;
-  top: 30%;
-  margin-top: 6em;
-  width: 100%;
+  text-align: center;
+  font-size: 0.8em;
 }
+
 #text6 {
-  font-family: "Times New Roman", Times, serif;
-  letter-spacing: 0.1em;
-  bottom: 8%;
-  position: absolute;
-  left: 100%;
-  right: 0%;
-  font-size: 1.3vw;
-  margin-left: 25em;
-  top: 30%;
-  margin-top: 7.5em;
+  text-align: center;
+  font-size: 0.8em;
 }
 #text7 {
-  font-family: "Times New Roman", Times, serif;
-  letter-spacing: 0.1em;
-  bottom: 8%;
-  position: absolute;
-  left: 100%;
-  right: 0%;
-  font-size: 1.3vw;
-  margin-left: 25em;
-  top: 30%;
-  margin-top: 9em;
+  margin-top: 0em;
+  text-align: center;
+  font-size: 0.8em;
 }
 #Kundvagn {
-  right: 27%;
-  position: absolute;
-  font-size: 2.3vw;
+  margin-top: 0em;
+  font-size: 1em;
+  text-align: center;
 }
 .modal {
   display: none;
@@ -226,38 +168,26 @@ form {
   cursor: pointer;
 }
 #Btn {
-  position: absolute;
-  bottom: 0%;
-  right: 35%;
-  font-size: 1.2vw;
+  display: block;
+  margin: 0 auto;
 }
 #Modaltext {
-  font-size: 3vw;
+  text-align: center;
+  font-size: 2em;
   position: absolute;
   color: bisque;
 }
-table,
-th,
-td {
-  border: 1px solid cadetblue;
-  width: 43%;
-  left: 0%;
-  right: 30%;
-  bottom: 4%;
-  margin-top: 14em;
-}
+
 .modal2 {
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 20em; /* Location of the box */
+  padding-top: 20em;
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
+  width: 100%;
+  height: 100%;
   background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
 .modal-content2 {
@@ -270,7 +200,7 @@ td {
 .close2 {
   color: #aaaaaa;
   float: right;
-  font-size: 1.4vw;
+  font-size: 1.4em;
   font-weight: bold;
 }
 .close2:hover,
@@ -288,12 +218,16 @@ td {
   left: 0%;
   right: 30%;
   bottom: 4%;
-  margin-top: 14em;
-  font-size: 1.31vw;
+  margin-top: 4em;
+  font-size: 0.9em;
 }
 .Btn2 {
   position: absolute;
   font-size: 1.5vw;
-  margin: 1em;
+  margin: 1.4em;
   left: 0%;
+}
+
+#Kurslista {
+  margin-top: 1em;
 }

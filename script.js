@@ -1,4 +1,5 @@
-function checkMe() {
+    
+    function checkMe() {
     var cb = document.getElementById("kurs1");
     var text = document.getElementById("text1");
 
@@ -21,43 +22,43 @@ function checkMe() {
     var text7 = document.getElementById("text7");
     
     if (cb.checked == true) {
-        text.style.display = "inline";
+        text.style.display = "block";
     }
     else {
         text.style.display = "none";
     }
     if (cb2.checked == true) {
-        text2.style.display = "inline"; 
+        text2.style.display = "block"; 
     }
      else {
         text2.style.display = "none";
     }
     if (cb3.checked == true) {
-        text3.style.display = "inline"; 
+        text3.style.display = "block"; 
     }
      else {
         text3.style.display = "none";
     }
     if (cb4.checked == true) {
-        text4.style.display = "inline"; 
+        text4.style.display = "block"; 
     }
      else {
         text4.style.display = "none";
     }
     if (cb5.checked == true) {
-        text5.style.display = "inline"; 
+        text5.style.display = "block"; 
     }
      else {
         text5.style.display = "none";
     }
     if (cb6.checked == true) {
-        text6.style.display = "inline"; 
+        text6.style.display = "block"; 
     }
      else {
         text6.style.display = "none";
     }
     if (cb7.checked == true) {
-        text7.style.display = "inline";
+        text7.style.display = "block";
     }
     else {
         text7.style.display = "none";

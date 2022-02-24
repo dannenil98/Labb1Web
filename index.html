@@ -38,7 +38,6 @@
         Vi kommer även att tillhandahålla on-demand kurser,
          där du som elev kan köpa färdiginspelade kurser till ett billigt pris.
     </p1>
-    </div>
     <h1>Kurslista</h1>
 <table id="Kurslista">
     <tr>
@@ -110,22 +109,20 @@
             <button id="Btn2" onClick="Läggtillrad()" >Lägg till </button>
         </div>
     </div>
-    <script >
-        function Läggtillrad(){
+    <script>
+        function Läggtillrad() {
             var tabell = document.getElementById("Kurslista");
-            var rad = tabell.insertRow(1);
+            var row = tabell.insertRow(1);
             var cell1 = row.insertCell(0);
             var cell2 = row.insertCell(1);
             var cell3 = row.insertCell(2);
             var cell4 = row.insertCell(3);
+            console.log(cell1);
             cell1.innerHTML = document.getElementById("cellEtt").value;
             cell2.innerHTML = document.getElementById("cellTvå").value;
             cell3.innerHTML = document.getElementById("cellTre").value;
             cell4.innerHTML = document.getElementById("cellFyra").value;
         }
-       
-        
-    
         var modal = document.getElementById("Modal2");
 
         var btn = document.getElementById("Btn2");
@@ -152,27 +149,5 @@
         }
     </script>
     
-    
-    <script>
-        var modal = document.getElementById("Modal2");
-
-        var btn = document.getElementById("Btn2");
-
-        var span = document.getElementsByClassName("close")[0];
-
-        btn.onclick = function () {
-            modal.style.display = "block";
-        }
-
-        span.onclick = function () {
-            modal.style.display = "none";
-        }
-
-        window.onclick = function (event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
 </body>
 </html>
