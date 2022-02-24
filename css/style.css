@@ -17,7 +17,10 @@ ul {
   left: 3%;
   top: 0%;
   color: beige;
-  font-size: 2.5vw;
+  font-size: 2vw;
+}
+
+.Headertext {
 }
 
 li a {
@@ -37,19 +40,19 @@ li a {
 }
 
 h1 {
-  position: absolute;
-  top: 10%;
   left: 37%;
   font-size: 2.4vw;
 }
+h2 {
+  padding: 8px;
+}
 h3 {
-  position: absolute;
   top: 17%;
   left: 37%;
   font-size: 1.8vw;
+  padding: 8px;
 }
 h4 {
-  position: absolute;
   left: 45%;
   top: 48%;
   font-size: 1.4vw;
@@ -59,7 +62,6 @@ p {
   font-family: "Times New Roman", Times, serif;
   bottom: 20%;
   letter-spacing: 0.1em;
-  position: absolute;
   left: 45%;
   right: 2%;
   font-size: 1.3vw;
@@ -67,36 +69,33 @@ p {
 #p2 {
   font-family: "Times New Roman", Times, serif;
   letter-spacing: 0.1em;
+
   bottom: 8%;
-  position: absolute;
   left: 45%;
   right: 2%;
   font-size: 1.3vw;
 }
 
 #Header {
-  position: absolute;
   align-items: center;
   font-size: 4vw;
   color: cadetblue;
+  padding: 8px;
 }
 li a:hover {
   background-color: rgb(66, 112, 114);
 }
+#pic3 {
+}
 
 #pic2 {
-  left: 0.65%;
-  position: absolute;
-}
-
-#pic1 {
-  right: 0.65%;
-  position: absolute;
+  float: right;
 }
 .responsive {
-  width: 30%;
+  max-width: 100%;
   height: auto;
-  margin: 1%;
+  margin: 1.2em;
+  font-size: 1.2vw;
 }
 
 form {
