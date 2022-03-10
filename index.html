@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css"/>  
+    <link rel="stylesheet" href="css/style.css"/> 
+    <script src="script.js"></script> 
     <title>Westcoast Education</title>
 </head>
 <body>
@@ -46,48 +47,10 @@
         <th>Kursbeskrivning</th>
         <th>Kurslängd</th>
     </tr>
-    <tr>
-        <td>5555</td>
-        <td>Cloud</td>
-        <td>Programmering i molntjänster</td>
-        <td>2 år</td>
-    </tr>
-    <tr>
-        <td>5556</td>
-        <td>AI</td>
-        <td>Lär dig allt om artificiell intelligens</td>
-        <td>2 år</td>
-    </tr>
-    <tr>
-        <td>5557</td>
-        <td>.NET</td>
-        <td>Backend programmering</td>
-        <td>2 år</td>
-    </tr>
-    <tr>
-        <td>5558</td>
-        <td>Programmering i python</td>
-        <td>Programmering i python helt enkelt</td>
-        <td>2 år</td>
-    </tr>
-    <tr>
-        <td>5559</td>
-        <td>Excel grund</td>
-        <td>Lär dig grunderna i Excel</td>
-        <td>2 år</td>
-    </tr>
-    <tr>
-        <td>5560</td>
-        <td>Officepaket</td>
-        <td>Lär dig grunderna i Word,Excel och Powerpoint</td>
-        <td>2 år</td>
-    </tr>
-    <tr>
-        <td>5561</td>
-        <td>Adobe</td>
-        <td>Lär dig bildbehanling i Photoshop, hur du skapar layouts med mera</td>
-        <td>2 år</td>
-    </tr>
+    
+    <tbody id="myTable">
+
+    </tbody>
 </table>
 <button id="Btn2" class="Btn2">Lägg till kurs</button>
 <button style="left: 11%;" class="Btn2" onclick="myFunction()">Ta bort</button>
@@ -148,6 +111,68 @@
             document.getElementById("Kurslista").deleteRow(1);
         }
     </script>
+    <script>
+    var myArray = [
+    {
+    'Kursnummer': '5555',
+    'Kurstitel': 'Cloud',
+    'Kursbeskrivning': 'Programmering i molntjänster',
+    'Kurslängd': '2 år'
+    },
+    {
+            'Kursnummer': '5556',
+            'Kurstitel': 'AI',
+            'Kursbeskrivning': 'PLär dig allt om artificiell intelligens',
+            'Kurslängd': '2 år'
+        },
+        {
+            'Kursnummer': '5557',
+            'Kurstitel': '.Net',
+            'Kursbeskrivning': 'Backend programmering',
+            'Kurslängd': '2 år'
+        },
+        {
+            'Kursnummer': '5558',
+            'Kurstitel': 'Programmering i python',
+            'Kursbeskrivning': 'Programmering i python helt enkelt',
+            'Kurslängd': '2 år'
+        },
+        {
+            'Kursnummer': '5559',
+            'Kurstitel': 'Excel grund',
+            'Kursbeskrivning': 'Lär dig grunderna i Excel',
+            'Kurslängd': '2 år'
+        },
+          {
+            'Kursnummer': '5560',
+            'Kurstitel': 'Officepaket',
+            'Kursbeskrivning': 'Lär dig grunderna i Word,Excel och Powerpoint',
+            'Kurslängd': '2 år'
+        },
+          {
+            'Kursnummer': '5561',
+            'Kurstitel': 'Adobe',
+            'Kursbeskrivning': 'Lär dig bildbehandling i Photoshop, hur du skapar layouts, med mera',
+            'Kurslängd': '2 år'
+        },
     
+
+    
+    ]
+    buildTable(myArray)
+    
+    function buildTable(data) {
+    var table = document.getElementById('myTable')
+    
+    for (var i = 0; i < data.length; i++){ var row=`<tr>
+        <td>${data[i].Kursnummer}</td>
+        <td>${data[i].Kurstitel}</td>
+        <td>${data[i].Kursbeskrivning}</td>
+        <td>${data[i].Kurslängd}</td>
+        </tr>`
+        table.innerHTML += row
+        }
+        }
+    </script>
 </body>
 </html>

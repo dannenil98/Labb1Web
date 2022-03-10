@@ -64,4 +64,5 @@
         text7.style.display = "none";
     }
     
-}
+} 
+
